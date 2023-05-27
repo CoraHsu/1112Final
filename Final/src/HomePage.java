@@ -141,11 +141,11 @@ public class HomePage extends JFrame{
 		            statement.setString(1, "%" + keyword + "%");
 		            ResultSet resultSet = statement.executeQuery();
 	
-		            // 處理搜索结果
+		            
 		            while (resultSet.next()) {
-		                // 處理每一行數據
+		                
 		                String result = resultSet.getString(column);
-		                System.out.println(result);
+		               showResultSet(resultSet);
 		            }
 	
 		    
